@@ -1,0 +1,18 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      // This adds the custom float-heart animation from your code
+      animation: {
+        'float-heart': 'float-heart linear infinite',
+      },
+    },
+  },
+  plugins: [
+    require("tailwindcss-animate"),
+  ],
+}
